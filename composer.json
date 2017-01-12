@@ -10,6 +10,13 @@
             "email": "samuel@sajflow.com"
         }
     ],
+    "repositories":[
+        {
+            "type":"git",
+            "url":"https://github.com/tecsin/yii2-file-manager"
+        }
+    ]
+    ,
     "require": {
         "yiisoft/yii2": "*",
         "tinymce/tinymce": ">=4",
