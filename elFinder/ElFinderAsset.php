@@ -30,5 +30,7 @@ class ElFinderAsset extends AssetBundle
         $this->js[] = YII_DEBUG ? 'js/elfinder.full.js' : 'js/elfinder.min.js';
         $this->css[] =  YII_DEBUG ? 'css/elfinder.min.css' : 'css/elfinder.full.css';
         $this->css[] = 'css/theme.css';
+        $this->css[] = 'css/theme-bootstrap-libreicons-svg.css';
     }
+   
 }

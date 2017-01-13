@@ -120,9 +120,6 @@ Class FileManager {
         return $this->_uploadUrl;
     }
     
-    public function actionUpload(){
-        
-    }
     
     private function useGoogleDrive()
     {
