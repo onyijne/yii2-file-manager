@@ -50,10 +50,6 @@ class Tinymce extends InputWidget
      * @var integer resizable if the file browser window should be resizable. Default is yes
      */
     public $resizable = '';
-    /**
-     * @var array tinymceInitOption
-     */
-    public $tinymceInitOptions = [];
     
      public function init() {
         parent::init();

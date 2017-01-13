@@ -47,9 +47,10 @@ class AdminController extends Controller
   }
   
 }```
-
+-----
 elFinder File Manager for Web  :
 file-manager action view file
+-----
 
 ```php
 
@@ -59,9 +60,10 @@ file-manager action view file
         'url' => '/admin/upload'
     ]
 ]); ?>```
-
+-----
 tinyMCE WYSIWYG Editor  :
 with model
+-----
 
 ```php
 <?= $form->field($model, 'content')->widget(\tecsin\filemanager\tinyMCE\Tinymce::className(), [
@@ -82,8 +84,9 @@ with model
 'height' => 350,
 'resizable' => 'yes'
 ]);?>```
-
+-----
 without model
+-----
 
 ```php
 <?= \tecsin\filemanager\tinyMCE\Tinymce::widget([
@@ -99,7 +102,9 @@ without model
     ]
 ]); ?>```
 
+-----
 file-browser file
+-----
 
 ```php
 <?= \tecsin\filemanager\elFinder\ElFinderWidget::widget([
@@ -109,3 +114,4 @@ file-browser file
         'url' => '/admin/upload'
     ]
 ]); ?>```
+-----
