@@ -20,7 +20,9 @@
     "require": {
         "yiisoft/yii2": "*",
         "tinymce/tinymce": ">=4",
-        "studio-42/elfinder": "2.1.20"
+        "studio-42/elfinder": "2.1.20",
+        "nao-pon/elfinder-flysystem-driver-ext": "*",
+        "nao-pon/flysystem-google-drive": "~1.1"
     },
     "autoload": {
         "psr-4": {

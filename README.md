@@ -50,8 +50,9 @@ class AdminController extends Controller
 ```
 
 elFinder File Manager for Web  :
-file-manager action view file
 -----
+file-manager action view file
+
 
 ```php
 
@@ -64,8 +65,9 @@ file-manager action view file
 ```
 
 tinyMCE WYSIWYG Editor  :
-with model
 -----
+with model
+
 
 ```php
 <?= $form->field($model, 'content')->widget(\tecsin\filemanager\tinyMCE\Tinymce::className(), [
@@ -89,7 +91,7 @@ with model
 ```
 
 without model
------
+
 
 ```php
 <?= \tecsin\filemanager\tinyMCE\Tinymce::widget([
@@ -108,7 +110,7 @@ without model
 
 
 file-browser file
------
+
 
 ```php
 <?= \tecsin\filemanager\elFinder\ElFinderWidget::widget([
