@@ -21,8 +21,7 @@ class ElFinderAsset extends AssetBundle
     public $sourcePath = '@vendor/studio-42/elfinder/';
 
     public $depends = [
-        'yii\web\JqueryAsset',
-        'yii\jui\JuiAsset',
+        'tecsin\filemanager\elFinder\BootstrapLibreICONSAsset',
     ];
     public function init()
     {
@@ -30,7 +29,6 @@ class ElFinderAsset extends AssetBundle
         $this->js[] = YII_DEBUG ? 'js/elfinder.full.js' : 'js/elfinder.min.js';
         $this->css[] =  YII_DEBUG ? 'css/elfinder.min.css' : 'css/elfinder.full.css';
         $this->css[] = 'css/theme.css';
-        $this->css[] = 'css/theme-bootstrap-libreicons-svg.css';
     }
    
 }
