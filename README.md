@@ -46,8 +46,9 @@ class AdminController extends Controller
       return $this->renderAjax('file-browser');//use ajax not to have a new site load in the file browser window
   }
   
-}```
------
+}
+```
+
 elFinder File Manager for Web  :
 file-manager action view file
 -----
@@ -59,8 +60,9 @@ file-manager action view file
     'clientOptions' => [
         'url' => '/admin/upload'
     ]
-]); ?>```
------
+]); ?>
+```
+
 tinyMCE WYSIWYG Editor  :
 with model
 -----
@@ -77,14 +79,15 @@ with model
         ],
         'toolbar' => "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons "
     ],
-//elfinder options
+/*elfinder options*/
 'file'  => '/admin/file-browser',//relative or absolute url
 'title' => 'file browser',
 'width' => 750,
 'height' => 350,
 'resizable' => 'yes'
-]);?>```
------
+]);?>
+```
+
 without model
 -----
 
@@ -100,9 +103,10 @@ without model
         ],
         'toolbar' => "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons "
     ]
-]); ?>```
+]); ?>
+```
 
------
+
 file-browser file
 -----
 
@@ -113,5 +117,5 @@ file-browser file
     'clientOptions' => [
         'url' => '/admin/upload'
     ]
-]); ?>```
------
+]); ?>
+```
