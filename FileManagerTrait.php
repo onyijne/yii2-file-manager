@@ -28,7 +28,7 @@ Trait FileManagerTrait {
     public  $_uploadPath;
     public  $_uploadUrl;
     
-    public $googleDrive = [];
+    private $googleDrive = [];
 
 
     private function access($attr, $path, $data, $volume) {

@@ -39,6 +39,13 @@ class AdminController extends Controller
   public function actionUpload(){
       $this->_uploadPath = Yii::getAlias('@webroot').'/files/';
       $this->_uploadUrl = Yii::getAlias('@web').'/files/';
+      /*to use google drive*/
+      $this->googleDrive[
+                  'clientID' => 'xxxxxx',
+                  'clientSecret' => 'xxxxxxx',
+                  'refreshToken' => 'xxxxxx',
+                  'useCache' => true //optional
+                  ]; 
       $this->connector();
   }
   
