@@ -64,8 +64,8 @@ Class FileManager {
         $roots = [
 		    [
 			'driver'        => 'LocalFileSystem',           // driver for accessing file system (REQUIRED)
-			'path'          => $this->uploadPath, // path to files (REQUIRED)
-			'URL'           => $this->uploadUrl, // URL to files (REQUIRED)
+			'path'          => $this->_uploadPath, // path to files (REQUIRED)
+			'URL'           => $this->_uploadUrl, // URL to files (REQUIRED)
 			//'uploadDeny'    => array('all'),                // All Mimetypes not allowed to upload
 			//'uploadAllow'   => array('image', 'text/plain'),// Mimetype `image` and `text/plain` allowed to upload
 			//'uploadOrder'   => array('deny', 'allow'),      // allowed Mimetype `image` and `text/plain` only
