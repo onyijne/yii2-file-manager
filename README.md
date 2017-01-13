@@ -30,24 +30,24 @@ Controller
 ```php
 class AdminController extends Controller
 {
-    use \tecsin\filemanager\FileManagerTrait;
     
     public function actionFileManager() {
         return $this->render('file-manager');
     }
    
   public function actionUpload(){
-      $this->_uploadPath = Yii::getAlias('@webroot').'/files/';
-      $this->_uploadUrl = Yii::getAlias('@web').'/files/';
+     $fileManager = new \tecsin\filemanager\FileManager();
+      $fileManager->_uploadPath = Yii::getAlias('@webroot').'/files/';
+      $fileManager->_uploadUrl = Yii::getAlias('@web').'/files/';
       /*to use google drive starts. OPTIONAL*/
-      $this->googleDrive[
+      $fileManager->googleDrive[
                   'clientID' => 'xxxxxx',
                   'clientSecret' => 'xxxxxxx',
                   'refreshToken' => 'xxxxxx',
                   'useCache' => true //optional
                   ]; 
       /*to use google drive ends*/
-      $this->connector();
+      $fileManager->connector();
   }
   
   public function actionFileBrowser(){

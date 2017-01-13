@@ -14,11 +14,11 @@ use yii\web\Response;
 use yii\base\InvalidConfigException;
 
 /**
- * Description of FileManager
+ * FileManager class with support for local file system, ftp, and google drive by default.
  *
  * @author Samuel Onyijne <samuel@sajflow.com>
  */
-Trait FileManagerTrait {
+Class FileManager {
     public  $debug = false; 
     public  $ftpUser = '';
     public  $ftpPassword = '';
@@ -28,7 +28,7 @@ Trait FileManagerTrait {
     public  $_uploadPath;
     public  $_uploadUrl;
     
-    private $googleDrive = [];
+    public $googleDrive = [];
 
 
     private function access($attr, $path, $data, $volume) {
@@ -41,7 +41,7 @@ Trait FileManagerTrait {
      * call the connector method in an action specfied as the connector url for file manager. 
      * You can call your options inside the action calling this method before calling this method.
      */
-    protected function connector() {
+    public function connector() {
         // Enable FTP connector netmount
          elFinder::$netDrivers['ftp'] = 'FTP';
          $this->access('write', '/', '', '');
@@ -60,7 +60,7 @@ Trait FileManagerTrait {
      * 
      * @return array the volumn roots to use in options. override this methos to change roots settings
      */
-    private function volumeRoots(){
+    public function volumeRoots(){
         $roots = [
 		    [
 			'driver'        => 'LocalFileSystem',           // driver for accessing file system (REQUIRED)
