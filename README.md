@@ -4,10 +4,10 @@ A file manager on elFinder 2.1.20 and TinyMCE 4 for Yii2
 
 PLEASE NOTE
 ------------
-This extension is no longer maintained. THe two components which make up this extension has been split to two 
+This extension is no longer maintained. The two components which make up this extension has been split into two 
 different extensions for ease of maintenance and future development.
 
-elFinder is now at [elFinder](https://github.com/tecsin/yii2-elfinder) 
+elFinder is now at [elFinder](https://github.com/tecsin/yii2-elfinder) while 
 tinyMCE is now at [tinyMCE](https://github.com/tecsin/yii2-tinymce) 
 
 Please use the above extensions for new installs. 
